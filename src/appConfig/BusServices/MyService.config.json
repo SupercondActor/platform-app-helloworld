@@ -1,0 +1,13 @@
+{
+    "ServiceName": "My Service Name",
+    "GroupName": "Demo Services",
+    "MetadataJson": "{\"Description\": \"My first service\"}",
+    "Job": {
+        "JobSchedule": {
+            "CronString": null,
+            "IntervalSeconds": 5,
+            "TimeoutSeconds": 300
+        },
+        "JobScript": ""
+    }
+}
