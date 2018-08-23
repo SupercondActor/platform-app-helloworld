@@ -1,9 +1,0 @@
-{
-    // The following will hide files in the editor
-    "files.exclude": {
-        "spec/**/*.js": true,
-        "src/app/**/*.js": true,
-        "**/*.map": true,
-        "node_modules/": true
-    }
-}
