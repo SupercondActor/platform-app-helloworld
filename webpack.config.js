@@ -27,7 +27,7 @@ module.exports = env => {
             new CopyWebpackPlugin([
                 { from: 'src/appConfig' }
             ]),
-            new ZipPlugin({ filename: 'BusinessServices.zip' })
+            new ZipPlugin({ filename: 'BusinessScriptBundle.zip' })
         ]
     }
 };

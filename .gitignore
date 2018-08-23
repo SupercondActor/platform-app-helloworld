@@ -1,6 +1,7 @@
 /package-lock.json
 /node_modules/
 /dist/
+/.vscode/
 /src/app/**/*.js
 /src/app/**/*.js.map
 /spec/**/*.js

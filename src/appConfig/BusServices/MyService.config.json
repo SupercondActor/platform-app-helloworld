@@ -1,5 +1,5 @@
 {
-    "ServiceName": "My Service Name",
+    "ServiceName": "My First Service",
     "GroupName": "Demo Services",
     "MetadataJson": "{\"Description\": \"My first service\"}",
     "Job": {
@@ -7,7 +7,6 @@
             "CronString": null,
             "IntervalSeconds": 5,
             "TimeoutSeconds": 300
-        },
-        "JobScript": ""
+        }
     }
 }
