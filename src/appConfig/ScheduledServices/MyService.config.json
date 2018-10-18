@@ -4,9 +4,7 @@
     "MetadataJson": "{\"Description\": \"My first service\"}",
     "Job": {
         "JobSchedule": {
-            "CronString": null,
-            "IntervalSeconds": 5,
-            "TimeoutSeconds": 300
+            "IntervalSeconds": 5
         }
     }
 }

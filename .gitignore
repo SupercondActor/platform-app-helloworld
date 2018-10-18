@@ -4,5 +4,4 @@
 /.vscode/
 /src/app/**/*.js
 /src/app/**/*.js.map
-/spec/**/*.js
 /spec/**/*.js.map
