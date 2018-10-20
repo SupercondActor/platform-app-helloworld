@@ -3,7 +3,7 @@
 
 Service Fabric Business Platform allows deployment of multiple orchestrated JavaScript services to the Service Fabric cluster, enjoying full range of security, performance, and application lifecycle management capabilities.
 
-<img src="https://www.supercondactor.com/images/InfograficTimeline.png" alt="Service Fabric Business Platform" />
+<img src="https://www.supercondactor.com/images/SupercondActorPlatformInfo.svg" alt="Service Fabric Business Platform" />
 
 This repository provides Business Platform developers with a quick start Hello World project tailored for Node.js development experience. 
 
@@ -66,13 +66,17 @@ This file is preconfigured to create the Code Package zip file ready to be uploa
 
 Usually, you don't have to modify this file.
 
-### `src/appConfig` folder
+### Your application files and folders
 
-This folder contain files which should be included into the Code Package - you should create package folders and files inside the `src/appConfig` folder after you decide which services you want to include in your application. See below for the structure of the Code Package.
+Add anything you need for your application.
 
 ### `spec` folder
 
 Here you put your unit tests.
+
+### `src/appConfig` folder
+
+This folder contain files which should be included into the Code Package - you should create package folders and files inside the `src/appConfig` folder after you decide which services you want to include in your application. See below for the structure of the Code Package.
 
 ### Structure of the Code Package
 
@@ -84,7 +88,7 @@ The name of the zip file can be anything, but inside there can be three folders:
 
 - :open_file_folder: `ScheduledServices`
 - :open_file_folder: `ListeningServices`
-- :open_file_folder: `Scripts` - this folder will be created by the webpack when you build the project
+- :open_file_folder: `Scripts`
 
 `ScheduledServices` and `ListeningServices` folders contain configuration and script files describing your business services.
 
