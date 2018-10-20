@@ -3,9 +3,11 @@
 
 Service Fabric Business Platform allows deployment of multiple orchestrated JavaScript services to the Service Fabric cluster, enjoying full range of security, performance, and application lifecycle management capabilities.
 
+<img src="https://www.supercondactor.com/images/InfograficTimeline.png" alt="Service Fabric Business Platform" />
+
 This repository provides Business Platform developers with a quick start Hello World project tailored for Node.js development experience. 
 
-The goal is to allow developers to easily generate complete `Code Package` zip file ready to be uploaded to the Business Platform cluster.
+The goal is to allow developers to easily generate complete `Code Package` zip file ready to be uploaded to the Service Fabric Business Platform cluster.
 
 ### Two types of business services
 
@@ -21,7 +23,7 @@ This type of service is supposed to wait for some external event, like an API ca
 
 ## Quick Start
 
-This section describes how to build and install the Hello World service to the Service Fabric Business Platform cluster. (Note: these instructions are for Windows platform.)
+How to build and install the Hello World service to the Service Fabric Business Platform cluster. (Note: these instructions are for Windows platform.)
 
 ### Prerequisites
 
@@ -39,7 +41,7 @@ In the root folder of the project run following commands:
 
 The `dist` folder will be created containing the Code Package file `BusinessScriptBundle.zip`. You'll need to upload this file using Service Manager UI.
 
-### Deployment to Service Fabric Business Platform
+### Deploying Code Package
 
 1. Navigate to your cluster's Service Manager UI. On local development cluster the URL is https://localhost/service-manager
 2. In the Cluster Explorer tree click a fabric: application
@@ -50,7 +52,7 @@ You are done! Now you can inspect and start your new service.
 
 ## Project structure
 
-### index.ts file
+### `index.ts` file
 
 `index.ts` is the entry file of your project, as specified in the `webpack.config.js`. It is the starting point in the TypeScript compilation and following JavaScript optimization, so make sure it references all entry points for your application - the dependency graph must reach all libraries you want to be included in the final script bundle.
 
@@ -60,13 +62,13 @@ You have to modify this file as appropriate for your application.
 
 `webpack.config.js` file is the webpack configuration file where the entry point of your project is specified. When webpack processes your application, it internally builds a dependency graph which maps every module your project needs and generates one or more bundles. See https://webpack.js.org/concepts/ for details.
 
-This file is also preconfigured to create the Code Package zip file ready to be uploaded to the Service Fabric Business Platform cluster.
+This file is preconfigured to create the Code Package zip file ready to be uploaded to the Service Fabric Business Platform cluster.
 
 Usually, you don't have to modify this file.
 
 ### `src/appConfig` folder
 
-This folder contain files which should be included into the Code Package - you should create package folders and files yourself after you decide which services you want to include in your application. See below for the structure of the Code Package.
+This folder contain files which should be included into the Code Package - you should create package folders and files inside the `src/appConfig` folder after you decide which services you want to include in your application. See below for the structure of the Code Package.
 
 ### `spec` folder
 
