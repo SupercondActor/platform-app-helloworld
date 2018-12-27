@@ -1,0 +1,15 @@
+{
+    "ServiceName": "My API Service",
+    "GroupName": "Demo Services",
+    "MetadataJson": "{\"Description\": \"My first API service\"}",
+    "EnableADAuthentication": false,
+    "ConfigureProxy": true,
+    "ServeFiles": false,
+    "ProxyConfiguration": [
+        {
+            "Key": "traefik.frontend.rule",
+            "Value": "PathPrefixStrip: /api/v1"
+        }
+    ],
+    "StopRequested": true
+}

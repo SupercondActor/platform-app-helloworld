@@ -1,0 +1,6 @@
+{
+    "ServiceName": "My Long-running Service",
+    "GroupName": "Demo Services",
+    "MetadataJson": "{\"Description\": \"My first Long-running service\"}",
+    "StopRequested": true
+}

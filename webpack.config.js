@@ -7,7 +7,7 @@ module.exports = env => {
         node: {
             fs: 'empty'
         },
-        entry: './index.ts',
+        entry: './src/index.ts',
         output: {
             path: path.resolve(__dirname, 'dist'),
             filename: 'Scripts/bundle.js'
