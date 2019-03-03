@@ -1,6 +1,6 @@
 /// <reference path="../SupercondActorTypes.d.ts" />
 
-// When running in the Service Fabric Business Platform
+// When running in the SupercondActor Business Platform
 // the global _SupercondActor instance will be provided by the environment.
 // For testing we need a mock.
 import { _SupercondActorMock } from "./support/SupercondActorMock";

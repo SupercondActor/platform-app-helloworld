@@ -2,10 +2,8 @@
     "ServiceName": "My Scheduled Service",
     "GroupName": "Demo Services",
     "MetadataJson": "{\"Description\": \"My first Scheduled service\"}",
-    "Job": {
-        "StopRequested": true,
-        "JobSchedule": {
-            "IntervalSeconds": 5
-        }
+    "StopRequested": true,
+    "JobSchedule": {
+        "IntervalSeconds": 5
     }
 }

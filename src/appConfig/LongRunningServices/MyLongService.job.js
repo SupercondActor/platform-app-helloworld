@@ -4,6 +4,6 @@ function sleep(ms) {
 
 let text = MyEntryPoints.getMessage();
 while (true) {
-    console.log('Message from Long-running service', text);
+    _SupercondActor.Logger.logInfo('Message from Long-running service', text);
     await sleep(5000);
 }

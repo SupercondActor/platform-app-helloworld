@@ -1,7 +1,7 @@
 {
   "name": "supercondactor-helloworld",
   "version": "1.2.0",
-  "description": "Hello World example Scheduled Service for the Service Fabric Business Platform",
+  "description": "Hello World example Scheduled Service for the SupercondActor Business Platform",
   "main": "index.js",
   "scripts": {
     "tsc": "tsc",

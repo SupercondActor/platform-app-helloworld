@@ -1,17 +1,17 @@
-# Service Fabric Business Platform
+# SupercondActor Business Platform
 ## Hello World example for Scheduled Service
 
-Service Fabric Business Platform allows deployment of multiple orchestrated JavaScript services to the Service Fabric cluster, enjoying full range of security, performance, and application lifecycle management capabilities.
+SupercondActor Business Platform allows deployment of multiple orchestrated JavaScript services to the Service Fabric cluster, enjoying full range of security, performance, and application lifecycle management capabilities.
 
-<img src="https://www.supercondactor.com/images/SupercondActorPlatformInfo.svg" alt="Service Fabric Business Platform" />
+<img src="https://www.supercondactor.com/images/SupercondActorPlatformInfo.svg" alt="SupercondActor Business Platform" />
 
 This repository provides Business Platform developers with a quick start Hello World project tailored for Node.js development experience. 
 
-The goal is to allow developers to easily generate complete `Code Package` zip file ready to be uploaded to the Service Fabric Business Platform cluster.
+The goal is to allow developers to easily generate complete `Code Package` zip file ready to be uploaded to the SupercondActor Business Platform cluster.
 
 ### Two types of business services
 
-There are two types of business services in the Service Fabric Business Platform - Scheduled Service and Listening Service
+There are two types of business services in the SupercondActor Business Platform - Scheduled Service and Listening Service
 
 #### Scheduled Service
 
@@ -23,7 +23,7 @@ This type of service is supposed to wait for some external event, like an API ca
 
 ## Quick Start
 
-How to build and install the Hello World service to the Service Fabric Business Platform cluster. (Note: these instructions are for Windows platform.)
+How to build and install the Hello World service to the SupercondActor Business Platform cluster. (Note: these instructions are for Windows platform.)
 
 ### Prerequisites
 
@@ -62,7 +62,7 @@ You have to modify this file as appropriate for your application.
 
 `webpack.config.js` file is the webpack configuration file where the entry point of your project is specified. When webpack processes your application, it internally builds a dependency graph which maps every module your project needs and generates one or more bundles. See https://webpack.js.org/concepts/ for details.
 
-This file is preconfigured to create the Code Package zip file ready to be uploaded to the Service Fabric Business Platform cluster.
+This file is preconfigured to create the Code Package zip file ready to be uploaded to the SupercondActor Business Platform cluster.
 
 Usually, you don't have to modify this file.
 
@@ -80,7 +80,7 @@ This folder contain files which should be included into the Code Package - you s
 
 ### Structure of the Code Package
 
-Whether you are developing a single business service or a complex application containing multiple services of different types, the best way of deploying your code to the Service Fabric Business Platform is to use Code Package - a set of folders and files packed in a zip file.
+Whether you are developing a single business service or a complex application containing multiple services of different types, the best way of deploying your code to the SupercondActor Business Platform is to use Code Package - a set of folders and files packed in a zip file.
 
 You can create a Code Package manually, or use this project structure and create the package by executing `npm run build` command. Anyway, here is a couple of simple rules.
 

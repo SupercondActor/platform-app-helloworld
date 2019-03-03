@@ -8,7 +8,7 @@
     "ProxyConfiguration": [
         {
             "Key": "traefik.frontend.rule",
-            "Value": "PathPrefixStrip: /api/v1"
+            "Value": "PathPrefixStrip: /api/hello"
         }
     ],
     "StopRequested": true
