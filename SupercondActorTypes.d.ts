@@ -13,6 +13,26 @@
         url: string;
         query: IKeyValuePair[];
         bodyJson: string;
+        authClaims: IAuthClaim[];
+    }
+
+    interface IAuthClaim {
+        type: string;
+        subject: IAuthClaimsIdentity;
+        originalIssuer: string;
+        issuer: string;
+        valueType: string;
+        value: string;
+        properties: IKeyValuePair[];
+    }
+
+    interface IAuthClaimsIdentity {
+        authenticationType: string;
+        isAuthenticated: boolean;
+        label: string;
+        name: string;
+        nameClaimType: string;
+        roleClaimType: string;
     }
 
     interface IKeyValuePair {
@@ -238,12 +258,22 @@
         instanceCount: number;
         metadataJson?: string;
         serviceScript?: string;
-        enableADAuthentication: boolean;
+        apiAuthenticationType: number;
+        apiAuthenticationConfig?: IApiAuthConfig;
         configureProxy: boolean;
         proxyConfiguration?: IKeyValuePair[];
         serveFiles: boolean;
         filesConfig?: IApiServiceFiles;
         stopRequested?: boolean;
+    }
+
+    interface IApiAuthConfig {
+        authority: string;
+        validIssuers: string[];
+        validAudiences: string[];
+        disableIssuerValidation: boolean;
+        disableAudienceValidation: boolean;
+        disableLifetimeValidation: boolean;
     }
 
     interface IApiServiceFiles {

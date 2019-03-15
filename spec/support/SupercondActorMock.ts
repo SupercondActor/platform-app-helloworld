@@ -13,6 +13,7 @@ export class _SupercondActor_RequestMock implements SupercondActor.IApiRequest {
     url = '';
     query = [];
     bodyJson = '{}';
+    authClaims = [];
 }
 
 export class _SupercondActor_ResponseMock implements SupercondActor.IApiResponse {
@@ -53,7 +54,10 @@ class SupercondActorPlatformConfigMock implements SupercondActor.IPlatformConfig
     }
     getApiAuthConfigurationAsync(): Promise<SupercondActor.IApiAuthConfiguration> {
         return new Promise((resolve, reject) => {
-            resolve(null);
+            resolve({
+                clientID: 'clientID-12345',
+                tenantID: 'tenantID-12345'
+            });
         });
     }
 }
@@ -187,7 +191,15 @@ class SupercondActorApiServiceConfigMock implements SupercondActor.IApiServiceCo
     serviceScript = '';
     metadataJson = '{}';
     removalRequested = false;
-    enableADAuthentication = false;
+    apiAuthenticationType = 0;
+    apiAuthenticationConfig = {
+        "authority": "",
+        "validIssuers": [],
+        "validAudiences": [],
+        "disableIssuerValidation": false,
+        "disableAudienceValidation": false,
+        "disableLifetimeValidation": false
+    };
     configureProxy = true;
     serveFiles = false;
     filesConfig = null;
